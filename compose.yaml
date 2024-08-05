@@ -1,0 +1,15 @@
+services:
+  img-upload-api:
+    build: ./img-upload-api
+    ports:
+      - "5013:5000"
+    volumes:
+          # <host-path>:<container-path>
+          - ./img-upload-api:/app
+  img-resize-api:
+    build: ./img-resize-api
+    ports:
+      - "5023:5000"
+    volumes:
+          # <host-path>:<container-path>
+          - ./img-resize-api:/app

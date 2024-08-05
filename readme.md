@@ -1,4 +1,4 @@
-# Neuralmed monorepo
+# Neural image monorepo
 ## requisitos
 - docker
 
@@ -15,3 +15,4 @@
 ## img-resize-api - API de redimensionamento de imagens
 - usa uma fila para receber requests
 - redimensiona imagens para 384x384
+- manda img redimensionada de volta para img-upload-api
